@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,77 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <section id="formSection">
+        <h2>Dev Form</h2>
+        <form action="https://formspree.io/f/xleaqajr" method="post">
+            <div>
+                <label for="name">Nome</label>
+                <input name="name" type="text" placeholder="Insira seu nome">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input name="email" type="email" placeholder="Insira seu email">
+            </div>
+            
+            <fieldset>
+                <legend>Selecione suas tecnologias favorita</legend>
+                <ul>
+                    <li>
+                        <label for="c">C</label>
+                        <input type="checkbox" name="c" value="c" />
+                    </li>
+                    <li>
+                        <label for="html/css">HTML/CSS</label>
+                        <input type="checkbox" name="html/css" value="html/css" />
+                    </li>
+                    <li>
+                        <label for="js">Javascript</label>
+                        <input type="checkbox" name="js" value="javascript" />
+                    </li>
+                    <li>
+                        <label for="java">Java</label>
+                        <input type="checkbox" name="java" value="java" />
+                    </li>
+                    <li>
+                        <label for="python">Python</label>
+                        <input type="checkbox" name="python" value="python" />
+                    </li>
+                    <li>
+                        <label for="rust">Rust</label>
+                        <input type="checkbox" name="rust" value="rust" />
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Você tem o costume de utilizar frameworks?</legend>
+                <ul>
+                    <li>
+                        <label for="sim">Sim</label>
+                        <input type="radio" name="frameworks" value="sim" />
+                    </li>
+                    <li>
+                        <label for="nao">Não</label>
+                        <input type="radio" name="frameworks" value="nao" />
+                    </li>
+                </ul>
+            </fieldset>
+
+            <div>
+                <label for="aprender">Qual tecnologia você gostaria de aprender?</label>
+                <input name="aprender" type="text" placeholder="Insira uma tecnologia">
+            </div>
+
+            <div>
+                <label for="text">Mande uma mensagem!</label>
+                <textarea name="text"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </section>
 </body>
 </html>
